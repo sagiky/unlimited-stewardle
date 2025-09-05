@@ -35,217 +35,27 @@ const flag = {
     "Indonesian": "id",
     "Italian": "it",
     "Monegasque": "mc",
-    "Chinese": "cn",
-    "Argentine": "ar",
-    "Andorran": "ad",
-    "Emirati": "ae",
-    "Afghan": "af",
-    "Antiguan": "ag",
-    "Anguillan": "ai",
-    "Albanian": "al",
-    "Armenian": "am",
-    "Angolan": "ao",
-    "Azerbaijani": "az",
-    "Austrian": "at",
-    "Bahamian": "bs",
-    "Bangladeshi": "bd",
-    "Barbadian": "bb",
-    "Beninese": "bj",
-    "Bhutanese": "bt",
-    "Botswanan": "bw",
-    "Bulgarian": "bg",
-    "Burkinabé": "bf",
-    "Burundian": "bi",
-    "Cambodian": "kh",
-    "Cameroonian": "cm",
-    "Cape Verdean": "cv",
-    "Chadian": "td",
-    "Chilean": "cl",
-    "Colombian": "co",
-    "Costa Rican": "cr",
-    "Croatian": "hr",
-    "Cuban": "cu",
-    "Cypriot": "cy",
-    "Czech": "cz",
-    "Dominican": "do",
-    "Ecuadorian": "ec",
-    "Egyptian": "eg",
-    "Salvadoran": "sv",
-    "Equatorial Guinean": "gq",
-    "Eritrean": "er",
-    "Estonian": "ee",
-    "Ethiopian": "et",
-    "Fijian": "fj",
-    "Gabonese": "ga",
-    "Gambian": "gm",
-    "Georgian": "ge",
-    "Ghanaian": "gh",
-    "Gibraltarian": "gi",
-    "Greek": "gr",
-    "Grenadian": "gd",
-    "Guatemalan": "gt",
-    "Guinean": "gn",
-    "Guyanese": "gy",
-    "Haitian": "ht",
-    "Honduran": "hn",
-    "Hong Konger": "hk",
-    "Hungarian": "hu",
-    "Icelandic": "is",
-    "Indian": "in",
-    "Iranian": "ir",
-    "Iraqi": "iq",
-    "Israeli": "il",
-    "Jamaican": "jm",
-    "Jordanian": "jo",
-    "Kazakh": "kz",
-    "Kenyan": "ke",
-    "North Korean": "kp",
-    "South Korean": "kr",
-    "Kuwaiti": "kw",
-    "Kyrgyz": "kg",
-    "Laotian": "la",
-    "Latvian": "lv",
-    "Lebanese": "lb",
-    "Liberian": "lr",
-    "Libyan": "ly",
-    "Liechtensteiner": "li",
-    "Lithuanian": "lt",
-    "Luxembourgish": "lu",
-    "Macedonian": "mk",
-    "Malagasy": "mg",
-    "Malawian": "mw",
-    "Malaysian": "my",
-    "Malian": "ml",
-    "Maltese": "mt",
-    "Marshallese": "mh",
-    "Mauritanian": "mr",
-    "Mauritian": "mu",
-    "Micronesian": "fm",
-    "Moldovan": "md",
-    "Mongolian": "mn",
-    "Montenegrin": "me",
-    "Moroccan": "ma",
-    "Mozambican": "mz",
-    "Namibian": "na",
-    "Nepalese": "np",
-    "Nicaraguan": "ni",
-    "Nigerien": "ne",
-    "Nigerian": "ng",
-    "Norwegian": "no",
-    "Omani": "om",
-    "Pakistani": "pk",
-    "Palauan": "pw",
-    "Panamanian": "pa",
-    "Papua New Guinean": "pg",
-    "Paraguayan": "py",
-    "Peruvian": "pe",
-    "Filipino": "ph",
-    "Portuguese": "pt",
-    "Qatari": "qa",
-    "Romanian": "ro",
-    "Rwandan": "rw",
-    "Saint Lucian": "lc",
-    "Saint Vincentian": "vc",
-    "Samoan": "ws",
-    "San Marinese": "sm",
-    "Saudi": "sa",
-    "Senegalese": "sn",
-    "Serbian": "rs",
-    "Seychellois": "sc",
-    "Sierra Leonean": "sl",
-    "Singaporean": "sg",
-    "Slovak": "sk",
-    "Slovenian": "si",
-    "Solomon Islander": "sb",
-    "Somali": "so",
-    "South African": "za",
-    "South Sudanese": "ss",
-    "Sri Lankan": "lk",
-    "Sudanese": "sd",
-    "Surinamese": "sr",
-    "Syrian": "sy",
-    "Taiwanese": "tw",
-    "Tajikistani": "tj",
-    "Tanzanian": "tz",
-    "Togolese": "tg",
-    "Tongan": "to",
-    "Trinidadian": "tt",
-    "Tunisian": "tn",
-    "Turkish": "tr",
-    "Turkmen": "tm",
-    "Tuvaluan": "tv",
-    "Ugandan": "ug",
-    "Ukrainian": "ua",
-    "Uruguayan": "uy",
-    "Uzbekistani": "uz",
-    "Vanuatuan": "vu",
-    "Vietnamese": "vn",
-    "Yemeni": "ye",
-    "Zambian": "zm",
-    "Zimbabwean": "zw"
+    "Chinese": "cn"
 }
 
-function team(teamName, year) {
-    switch(teamName) {
-        case "McLaren":
-            return "mclaren"
-            break
-        case "Alpine F1 Team":
-            return "alpine"
-            break
-        case "Mercedes":
-            return "mercedes"
-            break
-        case "Sauber":
-            if (year < 2024) {
-                return "sauber"
-            } else {
-                return "kick"
-            }
-            break
-        case "Haas F1 Team":
-            return "haas"
-            break
-        case "Lotus F1":
-            return "lotus"
-            break
-        case "Marussia":
-            return "marussia"
-            break
-        case "Manor Marussia":
-            return "marussia"
-            break
-        case "Renault":
-            return "renault"
-            break
-        case "Alfa Romeo":
-            return "alfa"
-            break
-        case "Williams":
-            return "williams"
-            break
-        case "Aston Martin":
-            return "aston"
-            break
-        case "Caterham":
-            return "caterham"
-            break
-        case "Red Bull":
-            return "red"
-            break
-        case "Toro Rosso":
-            return "toro"
-            break
-        case "AlphaTauri":
-            return "alpha"
-            break
-        case "Ferrari":
-            return "ferrari"
-            break
-        case "RB F1 Team":
-            return "rb"
-            break
-    }
+const team = {
+    "McLaren": "mclaren",
+    "Alpine F1 Team": "alpine",
+    "Mercedes": "mercedes",
+    "Sauber": "sauber",
+    "Haas F1 Team": "haas",
+    "Lotus F1": "lotus",
+    "Marussia": "marussia",
+    "Manor Marussia": "marussia",
+    "Renault": "renault",
+    "Alfa Romeo": "alfa",
+    "Williams": "williams",
+    "Aston Martin": "aston",
+    "Caterham": "caterham",
+    "Red Bull": "red",
+    "Toro Rosso": "toro",
+    "AlphaTauri": "alpha",
+    "Ferrari": "ferrari"
 }
 
 let stats = {
@@ -258,13 +68,7 @@ let driver
 
 let year = new Date().getFullYear()
 
-function sleep(ms) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
-}
-
-axios.get("https://api.jolpi.ca/ergast/f1/1950/driverStandings.json?limit=1000").then(async () => {
+axios.get("https://ergast.com/api/f1/1950/driverStandings.json?limit=1000").then(async () => {
     await updateDrivers()
 }).catch(() => {
     console.log("API is unreachable! Not updating drivers...")
@@ -272,7 +76,7 @@ axios.get("https://api.jolpi.ca/ergast/f1/1950/driverStandings.json?limit=1000")
         let data = fs.readFileSync(driversPath)
         drivers = JSON.parse(data)
     } else {
-        throw "Jolpica API is unreachable and the drivers.json cache has not been built. Please try again when the Jolpica API is online."
+        throw "Ergast API is unreachable and the drivers.json cache has not been built. Please try again when the Ergast API is online."
     }
 }).catch(err => {
     console.log(err)
@@ -283,7 +87,7 @@ axios.get("https://api.jolpi.ca/ergast/f1/1950/driverStandings.json?limit=1000")
 })
 
 schedule.scheduleJob("59 23 * * *", async () => {
-    axios.get("https://api.jolpi.ca/ergast/f1/1950/driverStandings.json?limit=1000").then(async () => {
+    axios.get("https://ergast.com/api/f1/1950/driverStandings.json?limit=1000").then(async () => {
         await updateDrivers()
     }).catch(() => {
         console.log("API is unreachable! Not updating drivers...")
@@ -301,21 +105,21 @@ schedule.scheduleJob("* * * * *", () => {
 
 async function updateDrivers() {
     let newDrivers = {}
-    for (let i = 2000; i <= year; i++) {
+    for (let i = 2010; i <= year; i++) {
         console.log(`Scraping F1 ${i} Season...`)
         try {
-            await axios.get(`https://api.jolpi.ca/ergast/f1/${i}/driverStandings.json?limit=1000`).then(res => {
+            await axios.get(`http://ergast.com/api/f1/${i}/driverStandings.json?limit=1000`).then(res => {
                 res.data.MRData.StandingsTable.StandingsLists[0].DriverStandings.forEach(driver => {
                     if (driver.Driver.driverId in newDrivers) {
                         newDrivers[driver.Driver.driverId].wins += parseInt(driver.wins)
-                        if (newDrivers[driver.Driver.driverId].constructors[newDrivers[driver.Driver.driverId].constructors.length - 1] !== team(driver.Constructors[0].name, i) || newDrivers[driver.Driver.driverId].constructors.length === 0) newDrivers[driver.Driver.driverId].constructors.push(team(driver.Constructors[0].name, i))
+                        if (newDrivers[driver.Driver.driverId].constructors[newDrivers[driver.Driver.driverId].constructors.length - 1] !== team[driver.Constructors[0].name] || newDrivers[driver.Driver.driverId].constructors.length === 0) newDrivers[driver.Driver.driverId].constructors.push(team[driver.Constructors[0].name])
                     } else if (driver.Driver.hasOwnProperty("permanentNumber")) {
                         newDrivers[driver.Driver.driverId] = {
                             "firstName": driver.Driver.givenName,
                             "lastName": driver.Driver.familyName,
                             "code": driver.Driver.code,
-                            "nationality": flag[driver.Driver.nationality.trim()],
-                            "constructors": [team(driver.Constructors[0].name, i)],
+                            "nationality": flag[driver.Driver.nationality],
+                            "constructors": [team[driver.Constructors[0].name]],
                             "permanentNumber": driver.Driver.permanentNumber,
                             "age": getAge(driver.Driver.dateOfBirth),
                             "firstYear": i,
@@ -327,7 +131,6 @@ async function updateDrivers() {
         } catch (e) {
             if (i !== year) throw ""
         }
-        await sleep(300)
     }
     drivers = newDrivers
 
@@ -399,6 +202,33 @@ function dotd() {
     console.log(drivers[driver])
 }
 
+function new_driver() {
+    console.log("Selecting New Driver...")
+    let date = dayjs().format("YYYY-MM-DD")
+    let pastDrivers = []
+    let pastDates = []
+    if (fs.existsSync(statsPath)) {
+        let statsFile = JSON.parse(fs.readFileSync(statsPath))
+        pastDates = Object.keys(statsFile)
+        pastDrivers = Object.values(statsFile).map(x => x.driver).filter((x) => { return typeof x === "string"})
+    }
+
+    let newDriver = getRandomProperty(drivers)
+    while (pastDrivers.slice(-14).includes(newDriver)) {
+        newDriver = getRandomProperty(drivers)
+    }
+    driver = newDriver
+
+    stats = {
+        "visits": 0,
+        "guesses": 0,
+        "driver": driver
+    }
+    processStats(true)
+    console.log(`New Driver is ${driver}!`)
+    console.log(drivers[driver])
+}
+
 function getRandomProperty(obj) {
     let keys = Object.keys(obj)
     return keys[Math.floor(Math.random() * keys.length)]
@@ -438,6 +268,11 @@ function server() {
     app.get("/", (req, res) => {
         res.render("index")
         stats.visits++
+    })
+
+    app.get("/reload", (req, res) => {
+        new_driver()
+        res.redirect("/")
     })
 
     app.get("/winner", (req, res) => {
